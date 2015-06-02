@@ -1,5 +1,4 @@
 var restful = require('node-restful');
-
 module.exports = function(app, route) {
 
 	//Setup the controller for REST
@@ -14,5 +13,5 @@ module.exports = function(app, route) {
 	// Return Middleware
 	return function(req, res, next) {
 		next();
-	}
-}
+	};
+};
