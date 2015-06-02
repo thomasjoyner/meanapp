@@ -29,7 +29,6 @@ mongoose.connection.once('open', function() {
 
 	//Load the routes
 	var routes = require('./routes');
-
 	_.each(routes, function(controller, route) {
 		app.use(route, controller(app, route));
 	});
@@ -37,7 +36,3 @@ mongoose.connection.once('open', function() {
 	console.log('Listening on port 3000...');
 	app.listen(3000);
 });
-
-
-
-
